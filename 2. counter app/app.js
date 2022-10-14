@@ -13,6 +13,8 @@ buttons.forEach(function (btn) {
       count++;
     } else if (styles.contains("reset")) {
       count = 0;
+    } else {
+      console.error("Invalid styles: " + styles.join(" "));
     }
 
     if (count > 0) {
